@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>// nt</title>
+		<script src="terminal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+	<body style="overflow: hidden; height: 100vh">
+    <div id="terminal" style="height: 100vh; padding: 20px; margin: 0 auto;">
+  		<script>
+  			var t1 = new Terminal()
+  			t1.setHeight("calc(100% - 56px)")
+  			t1.setWidth("100%")
+  			document.getElementById('terminal').appendChild(t1.html);
+        function ready() {
+        t1.input('', function (input) {
+          var input = input.toLowerCase()
+  	      if (input == ">> who are you?" || input == ">> who are you") {
+             t1.print("My name is Nicholas. I study math and linguistics at Brown University.");
+             ready();
+          }
+          else if (input.includes("notes")) {
+             t1.print("Did you ask for my notes? Redirecting now...");
+             t1.sleep(1000, function (input) {
+               window.open("https://designist.github.io/Math1530/");
+             });
+             ready();
+          }
+          else if (input.includes("hi") || input.includes("hello")) {
+             t1.print("Hello!");
+             ready();
+          }
+          else if (input.includes("vanish") || input.includes("disappear")) {
+            t1.print("Vanishing...");
+            t1.sleep(880, function (input) {
+              t1.clear();
+            });
+            var target = $("#terminal");
+            removeElement(target);
+
+            function removeElement(target) {
+              target.animate({
+                opacity: "-=1"
+              }, 880, function() {
+                target.remove();
+              });
+            }
+            t1.sleep(0, function (input) {
+              t1.beep();
+            });
+          }
+          else if (input == ">> help" || input == ">> -h") {
+             t1.print("Some things you can do: ");
+             t1.print(" - Ask for my notes.");
+             t1.print(" - Ask who I am.")
+             t1.print(" - Make everything vanish.")
+             ready();
+          }
+          else {
+             t1.print("command not found: " + input.substr(3));
+             t1.print("Type 'help' or '-h' for options.")
+             ready();
+          }
+  			})}
+        ready();
+  		</script>
+    </div>
+	</body>
+</html>
