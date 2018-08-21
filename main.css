@@ -1,0 +1,35 @@
+#wrap {
+	width: 750px;
+	margin: 0 auto;
+	background: #99c;
+}
+
+#header {
+	background: #ddd;
+}
+
+#nav {
+	background: #c99;
+}
+
+#main {
+	float: left;
+	width: 500px;
+	background: #9c9;
+}
+
+#sidebar {
+	float: right;
+	width: 250px;
+	background: #c9c;
+}
+
+#footer {
+	background: #cc9;
+	clear: both;
+}
+
+#profile-pic {
+	border-radius: 10px;
+	width: 250px;
+}
