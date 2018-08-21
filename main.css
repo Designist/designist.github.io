@@ -1,35 +1,45 @@
 #wrap {
-	width: 750px;
+	width: 800px;
 	margin: 0 auto;
-	background: #99c;
+	/*background: #99c;*/
+	font-family: "utopia-std-caption";
 }
 
 #header {
-	background: #ddd;
+	/*background: #ddd;*/
+	margin-top: 60px;
 }
 
 #nav {
-	background: #c99;
+	/*background: #c99;*/
 }
 
 #main {
 	float: left;
 	width: 500px;
-	background: #9c9;
+	/*background: #9c9;*/
 }
 
 #sidebar {
 	float: right;
-	width: 250px;
-	background: #c9c;
+	width: 200px;
+	/*background: #c9c;*/
 }
 
 #footer {
-	background: #cc9;
+	/*background: #cc9;*/
 	clear: both;
 }
 
 #profile-pic {
-	border-radius: 10px;
-	width: 250px;
+	/*border-radius: 10px;*/
+	width: 200px;
+}
+
+a { 
+	color: black;
+}
+
+a:hover {
+	color: red;
 }
