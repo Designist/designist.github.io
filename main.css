@@ -1,13 +1,12 @@
 #wrap {
 	width: 800px;
-	margin: 0 auto;
+	margin: 60px auto;
 	/*background: #99c;*/
 	font-family: "utopia-std-caption";
 }
 
 #header {
 	/*background: #ddd;*/
-	margin-top: 60px;
 }
 
 #nav {
