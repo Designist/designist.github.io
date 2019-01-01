@@ -1,0 +1,38 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\title{Beamer Presentation}
+\institute{Brown University}
+\author{Nicholas Tomlin}
+\date{\today}
+\begin{document}
+    \maketitle  
+    \begin{frame}{How to use Beamer}
+        Beamer is easy and fun and great!
+        \begin{itemize}
+            \pause
+            \item Set your documentclass to beamer
+            \pause
+            \item Put title information in the preamble, and then maketitle
+            \pause
+            \item Write your slides inside frame environments
+            \pause
+            \item Set a theme, and a color theme
+        \end{itemize}
+    \end{frame}
+    \begin{frame}{Math stuff}
+    	\begin{theorem}
+	There are infinitely many primes.
+	\end{theorem}
+	\begin{proof}
+	Assume not, and let $p_1,\ldots,p_n$ be all the primes. Then $$1 + \prod p_i$$ is also a prime, contradicting the assumption. Hence there are infinitely many primes.
+	\end{proof}
+    \end{frame}
+    % Some o
+    \begin{frame}
+	\only<1>{\center \includegraphics[width=0.6\textwidth]{gates.jpg}}
+	\only<2>{\center \includegraphics[width=0.6\textwidth]{scili.jpg}}
+	\transdissolve<2>
+    \end{frame}
+\end{document}
