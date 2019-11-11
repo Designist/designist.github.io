@@ -1,83 +1,130 @@
 <html>
 
 <head>
-	<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-	<link rel="stylesheet" href="main.css"/>
-	<link rel="stylesheet" href="https://use.typekit.net/szn3lvv.css">
-	<title>Research | Nicholas Tomlin</title>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129413216-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-129413216-1');
-	</script>
+<title>Nicholas Tomlin</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/>
+<script src="scripts/confetti.min.js"></script>
 </head>
 
 <body>
-
-<div id="wrap">
-<div id="header">
+<div id="content">
+	<div id="header">
 	<h1>Nicholas Tomlin</h1>
-</div>
-<div id="nav"></div>
+		<!-- <div id="photo"></div> -->
+		<div id="aboutme">
+		<h3>About Me</h3>
+		<p>
+			I'm a first-year PhD student at UC Berkeley.
+			I'm affiliated with <a href="https://bair.berkeley.edu/">BAIR</a> and <a href="http://nlp.cs.berkeley.edu/">Berkeley NLP</a>, as well as the <a href="http://changlab.ucsf.edu/">UCSF Chang Lab</a>.
+		    I'm broadly interested in computational linguistics, theoretical neuroscience, reinforcement learning, and cognitive science.
+		    My advisor is <a href="https://people.eecs.berkeley.edu/~klein/">Dan Klein</a>.
+		</p>
 
-<div id="main">
-<p>I'm a first-year doctoral student at <a href="https://bair.berkeley.edu/">Berkeley AI Research</a>, advised by Dan Klein. Previously, I worked with Ellie Pavlick at Brown University. My primary academic interests are computational linguistics, cognitive science, reinforcement learning, and neuroscience.</p>
+		<p>
+			Before coming to Berkeley, I studied mathematics and linguistics at Brown University, where I was advised by <a href="https://cs.brown.edu/people/epavlick/">Ellie Pavlick</a>.
+		</p>
+		</div>
 
-<p>Outside of academia, I enjoy <a href="https://www.unicode.org/L2/L2016/16372-sandwich-emoji.pdf">emoji</a>, chess, <a href="./latex/latex.html">typesetting</a>, and granola.</p>
-<hr style="height:0px; visibility:hidden;" />
+		<div id="news">
+			<h3>News</h3>
+			<div class="newsitem">
+				<div class="newsdate">
+					December 2019
+				</div>
+				<div class="newsdivider"></div>
+				<div class="newsbody">
+					I'll be at <a href="https://neurips.cc/Conferences/2019/Schedule">NeurIPS</a> in December and <a href="https://blogs.umass.edu/scil/call-for-papers-scil-2020/">SCiL</a> in January. Reach out to me at <span class="email"></span> if you'd like to chat.
+				</div>
+			</div>
 
-<h2>Past Research</h2>
+			<div class="newsitem">
+				<div class="newsdate">
+					November 2019
+				</div>
+				<div class="newsdivider"></div>
+				<div class="newsbody">
+					In Spring 2020, I'll be organizing a student seminar on the foundations of theoretical neuroscience.
+					See a tentative syllabus <a href="teaching/seminars/theoretical-neuroscience.html">here</a>.
+				</div>
+			</div>
 
-<h3>Emergent Communication and Reinforcement Learning</h3>
-<ul>
-	<li>Studied how agents may cooperate to develop a "language" in certain multi-agent reinforcement learning environments, and how to induce more natural linguistic structure via information theoretic concepts such as <a href="http://aclweb.org/anthology/E17-1065">noisy-context surprisal</a>.</li>
-	<li>Presented at 2018 Neural Information Processing Systems Workshop on Emergent Communication. [<a href=./emecom-abstract.html>Abstract</a>] [<a href="./emecom-paper.pdf">Paper</a>]</li>
-</ul>
+			<!-- <div class="newsitem">
+				<div class="newsdate">
 
-<h3>Pragmatic Dialogue Agents for Negotiation</h3>
-<ul>
-	<li>Studied how the rational speech acts (RSA) model may be used to achieve goal-oriented dialogue in neural conversational agents. Built pragmatic agents for a negotiation task. [<a href="https://github.com/nickatomlin/Negotiation">Code</a>]</li>
-	<li>Work done at <a href="https://www-csli.stanford.edu/csli-summer-internship-program-2018">Stanford CSLI</a> under NSF REU (award #1659585).</li>
-</ul>
+				</div>
+				<div class="newsdivider"></div>
+				<div class="newsbody">
 
-<p>See <a href="publications.html">here</a> for a more comprehensive list of talks and publications.</p>
-
-<!-- <h2>Teaching Assistantship</h2>
-<p>I'm currently (as of Fall 2018) a teaching assistant for CSCI 1570: Design and Analysis of Algorithms and CLPS 0300: Introduction to Linguistics. My TA hours are the following:</p>
-<ul>
-	<li>CLPS 0300: Tuesdays 2:30-4:30pm, Metcalf 031</li>
-	<li>CSCI 1570: Tuesdays 9-11pm, CIT 219 </li>
-</ul>
-<p>In the past, I've been a teaching assistant for MATH 1530: Abstract Algebra. <a href="https://designist.github.io/Math1530/">Here</a> are some notes I wrote on the class.</p>
-<br/> -->
-</div>
-
-<div id="sidebar">
-	<div id="profile">
-		<img id="profile-pic" src="ntomlin2.jpg"/>
+				</div>
+			</div> -->
+		</div>
 	</div>
 
-	<div id="bio">
-		<p>UC Berkeley <br/> PhD Student <br/>Department of EECS</p>
+	<div class="divider"></div>
 
-		<p>Brown University <br/> Class of 2019 <br/> A.B. Math and Linguistics</p>
+	<div id="publications">
+		<h2>Publications & Conference Presentations</h2>
+		<div class="year" id="2019">
+			<h3 class="pubdate">2019</h3>
+			<div class="pub">
+				Tomlin, N. & Pavlick, E. (2019).
+				Emergent Compositionality in Signaling Games. 
+				Forty-First Annual Conference of the Cognitive Science Society.
+				<!-- Add link to thesis on abstract page. -->
+				<div class="publinks">
+					[<a href="research/abstracts/cogsci2019.html">Abstract</a>]
+					[<a href="#">Poster</a>]
+				</div>
+			</div>
+		</div>
 
-		<p><a href="./cv.pdf">CV</a> | <a href="https://github.com/nickatomlin">GitHub</a></p>
+		<div class="year" id="2018">
+			<h3 class="pubdate">2018</h3>
+			<div class="pub">
+				Tomlin, N. & Pavlick, E. (2018).
+				Incremental Pragmatics and Emergent Communication.
+				Neural Information Processing Systems Workshop on Emergent Communication.
+				<div class="publinks">
+					[<a href="research/abstracts/emecom2018.html">Abstract</a>]
+					[<a href="research/papers/emecom2018.pdf">Paper</a>]
+					[<a href="research/slides/emecom2018.pdf">Slides</a>]
+				</div>
+			</div>
+		</div>
 
-		<!-- <br/><br/><br/><br/>
-		<a href="latex/latex.html" style="text-decoration: none; text-align: center; display: block;"></a> -->
+		<div class="year" id="2017">
+			<h3 class="pubdate">2017</h3>
+			<div class="pub">
+				Bai, J., Dabkowski, M., Pride, K., & Tomlin, N. (2017).
+				Yucatec Maya: A Fragment.
+				24th International Conference on Head-Driven Phrase Structure Grammar.
+				<div class="publinks">
+					<!-- Add link to grammar signature on abstract page. -->
+					[<a href="research/abstracts/hpsg2017.html">Abstract</a>]
+					[<a href="research/slides/hpsg2017.pdf">Slides</a>]
+				</div>
+			</div>
+		</div>
 
+		<div class="year" id="review">
+			<h3 class="pubdate">Accepted, Under Revision</h3>
+			<div class="pub">
+				Pride, K., Tomlin, N., & AnderBois, S.
+				LingView: a Web Interface for Viewing FLEx and ELAN Files.
+				Language Documentation & Conservation.
+				<div class="publinks">
+					[<a href="research/abstracts/ldc.html">Abstract</a>]
+					[<a href="https://github.com/BrownCLPS/LingView">Code</a>]
+					[<a href="https://brownclps.github.io/LingView/#/index/">Demo</a>]
+					[<a href="research/papers/ldc.pdf">Paper</a>]
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="extra" onclick="confetti.toggle()">
 	</div>
 </div>
-
-<div id="footer">
-<!-- <p>Footer</p> -->
-</div>
-</div>
-
 </body>
+</html>
