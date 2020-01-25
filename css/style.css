@@ -103,3 +103,20 @@ a:hover {
 	background-color: red;
 	cursor: pointer;
 }
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: lightblue;
+		margin: 20px;
+  }
+
+	#content {
+		width: 100%;
+		padding: 0px;
+		box-shadow: none;
+	}
+
+	#extra {
+		display: none;
+	}
+}
